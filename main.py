@@ -31,7 +31,7 @@ for count, (post_datetime, title, post_url, image_url, image_author, text_conten
     image_filename = f"{IMAGE_DIR}/post_{count}.jpg"
 
     if not download_image(image_url, image_filename):
-        print(f"❌ Пропускаем пост: {title}, так как изображение не загружено.")
+        print(f"Пропускаем пост: {title}, так как изображение не загружено.")
         continue
 
     output_image_path = f"{OUTPUT_DIR}/post_{count}.png"

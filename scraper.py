@@ -25,7 +25,7 @@ def scrape_posts():
     posts = []
 
     for base_url in BASE_URLS:
-        print(f"🔄 Загружаем страницу: {base_url}")
+        print(f"Загружаем страницу: {base_url}")
         html = get_dynamic_html(base_url)
         soup = BeautifulSoup(html, "html.parser")
 
